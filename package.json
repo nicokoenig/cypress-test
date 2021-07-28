@@ -7,8 +7,10 @@
     "devserver": "serve ./src",
     "e2e": "cypress open",
     "e2e:ci": "cypress run",
+    "eslint": "eslint src --fix",
     "eslint:ci": "eslint src",
-    "prettier:ci": "prettier src"
+    "prettier": "prettier src --write",
+    "prettier:ci": "prettier src --check"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +18,11 @@
   "devDependencies": {
     "cypress": "^8.0.0",
     "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "prettier": "^2.3.2",
     "serve": "^12.0.0"
